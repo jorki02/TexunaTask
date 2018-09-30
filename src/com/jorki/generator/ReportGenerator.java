@@ -101,10 +101,9 @@ public class ReportGenerator {
                 report.add(str);
                 remainingLines--;
             }
-            if(remainingLines > 1) {
-                report.add(StringUtils.repeat("-", pageSettings.getPageWidth()));
-                remainingLines--;
-            }
+
+            report.add(StringUtils.repeat("-", pageSettings.getPageWidth()));
+            remainingLines--;
         }
 
         return report;
